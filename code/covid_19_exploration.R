@@ -1,4 +1,10 @@
-
+# ----------------------------------------------------------------------------- # 
+# Project: Covid-19 
+# Content: Data exploration 
+# Contributors: Thomas Alcock 
+# Last update on: 2020-03-21 
+# Summary: Some time series plots of the covid 19 data by country 
+# ----------------------------------------------------------------------------- #
 
 # Covid 19 Exploration ----------------------------------------------------
 

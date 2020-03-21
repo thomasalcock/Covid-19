@@ -1,3 +1,10 @@
+# ----------------------------------------------------------------------------- # 
+# Project: Covid-19 
+# Content: Modeling 
+# Contributors: Thomas Alcock 
+# Last update on: 2020-03-21 
+# Summary: Modeling script for the covid-19 time series by country 
+# ----------------------------------------------------------------------------- #
 
 # Covid_19 Modeling -------------------------------------------------------
 
