@@ -9,7 +9,7 @@ library(reshape2)
 library(ggplot2)
 library(rlang)
 library(glmnet)
-source("covid_functions.R")
+source("code/covid_functions.R")
 
 # download source data ----------------------------------------------------
 get_source_data()
@@ -54,7 +54,7 @@ start_date_confirmed <- get_start_date(df = eu_covid)
 # TS plot of confirmed by EU country ----------------------------------------
 eu_covid %>% 
   dplyr::filter(
-    country %in% countries_of_interest & 
+    country %in% c("Germany", "Italy", "Spain") & 
     date_rep >= start_date_confirmed
   ) %>% 
   ggplot(aes(x = date_rep, y = confirmed)) +
@@ -64,5 +64,9 @@ eu_covid %>%
     x = "Date reported", 
     y = "Confirmed"
   ) +
-  facet_wrap(~country)
+  facet_wrap(
+    facets = ~country, 
+    nrow = 3, 
+    ncol = 1
+  )
 
